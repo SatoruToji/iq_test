@@ -3,6 +3,7 @@
 body {
     background-color: darkslategray;
     color: white;
+    font-size: 2em;
 }
 
 header,
@@ -16,7 +17,6 @@ nav{
 
 header {
     height: 100vh;
-    background-image: url('/pictures/home-2.jpg');
     background-size: cover;
 }
 
@@ -26,4 +26,21 @@ footer {
 
 nav {
     height: 100px;
+}
+
+button {
+    padding: 1vh;
+    background-color: darkslategrey;
+    color: darkgray;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+select {
+    background-color: black;
+}
+
+.border {
+    background-image: url('/pictures/home-2.jpg');
+    border: none;
 }

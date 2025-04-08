@@ -1,12 +1,15 @@
+import Link from 'next/link'
 import { Button } from './button/Button'
 
 export function Header() {
     return (
-        <header>
+        <header className='border'>
             <article>
                 <section>
                     Быть умным - это сдорово!
-                    <Button content="take the test" />
+                    <Link href='../pages/hello'>
+                        <Button content="take the test" />
+                    </Link>
                 </section>
             </article>
         </header>
