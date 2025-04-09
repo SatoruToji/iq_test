@@ -1,8 +1,10 @@
-import { UserCard } from "@/app/components/cards/UserCard";
+import { UserCard } from '@/components/cards/UserCard'
+import { Nav } from '@/components/Nav'
 
 export default function Page() {
     return (
         <>
+        <Nav />
             <article>
                 <h1>Ваш портрет</h1>
                 <section>

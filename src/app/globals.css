@@ -25,7 +25,7 @@ footer {
 }
 
 nav {
-    height: 100px;
+    height: 12vh;
 }
 
 button {
@@ -43,4 +43,14 @@ select {
 .border {
     background-image: url('/pictures/home-2.jpg');
     border: none;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10vh;
+}
+
+.start {
+    display: flex;
 }

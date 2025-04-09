@@ -7,7 +7,7 @@ export function Header() {
             <article>
                 <section>
                     Быть умным - это сдорово!
-                    <Link href='../pages/hello'>
+                    <Link href='/pages/hello'>
                         <Button content="take the test" />
                     </Link>
                 </section>
