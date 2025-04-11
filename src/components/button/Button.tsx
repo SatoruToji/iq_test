@@ -3,16 +3,15 @@
 import { useRouter } from 'next/navigation'
 
 interface Props {
-    content: string
+    children: string
     Link?: string
 }
 
-export function Button({ content, Link }: Props) {
+export function Button({ children, Link }: Props) {
     const router = useRouter()
     return (
         <>
-            
-            <button onClick={() => console.log('here')}>{content}</button>
+            <button onClick={() => console.log('here')}>{children}</button>
         </>
     )
 }
