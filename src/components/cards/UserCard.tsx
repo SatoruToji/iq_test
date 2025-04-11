@@ -26,7 +26,7 @@ export function UserCard() {
         <>
             <form id="form">
                 <fieldset>
-                    <legend>Your Gender:</legend>
+                    <legend>1. Your Gender:</legend>
                     <div>
                         <input
                             type="radio"
@@ -52,7 +52,7 @@ export function UserCard() {
                 </fieldset>
 
                 <fieldset>
-                    <legend>Your City:</legend>
+                    <legend>2. Your City:</legend>
                     <select
                         name="city"
                         id="city"
@@ -67,7 +67,7 @@ export function UserCard() {
                 </fieldset>
 
                 <fieldset>
-                    <legend>How old are you?</legend>
+                    <legend>3. How old are you?</legend>
                     <label htmlFor="age">ur age:</label>
                     <input
                         type="range"
@@ -79,14 +79,16 @@ export function UserCard() {
                     />
                     <span id="res">{age}</span>
                 </fieldset>
+                <a href="#IqTestDescription">Continue</a>
                 <button
                     type="submit"
                     onClick={(e) => {
                         e.preventDefault()
                         router.push('/pages/iqTest')
                     }}
+                    className='absolute m-auto right-0 left-0 w-fit'
                 >
-                    next
+                    Continue
                 </button>
             </form>
         </>

@@ -1,9 +1,9 @@
 @import 'tailwindcss';
 
 body {
-    background-color: darkslategray;
+    background-color: #181a1b;
     color: white;
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 header,
@@ -25,7 +25,11 @@ footer {
 }
 
 nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
     height: 12vh;
+    
 }
 
 button {
@@ -45,11 +49,7 @@ select {
     border: none;
 }
 
-.nav {
-    display: flex;
-    justify-content: space-between;
-    width: 100vw;
-}
+ 
 
 .start {
     display: flex;
@@ -58,10 +58,12 @@ select {
     align-items: center;
     height: 100vh;
 }
-
-.start__test {
-    /* width: 140vh; */
-    /* height: 85vh; */
-    text-align: center;
-    background-color: gray;
+.start2 {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
 }
+
+

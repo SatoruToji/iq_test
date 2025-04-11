@@ -12,7 +12,7 @@ export default function Page() {
         <div className="start">
             <Nav />
             <article>
-                <section className="start__test ">
+                <section>
                     <h2>Exercise {num}</h2>
                     <section className="flex justify-between p-7 gap-9">
                         <MyImage

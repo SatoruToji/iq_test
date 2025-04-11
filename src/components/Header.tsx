@@ -3,12 +3,12 @@ import { Button } from './button/Button'
 
 export function Header() {
     return (
-        <header className='border'>
+        <header className="border">
             <article>
-                <section>
-                    Быть умным - это сдорово!
-                    <Link href='/pages/hello'>
-                        <Button>take the test</Button>
+                <section className="absolute left-0 ms-36">
+                    <h2>Быть умным - это сдорово!</h2>
+                    <Link href="/pages/hello" className="bg-gray-800">
+                        take the test
                     </Link>
                 </section>
             </article>
