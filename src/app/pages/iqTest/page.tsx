@@ -3,6 +3,7 @@
 import { Exercise } from '@/components/cards/iq_tests/Exercise'
 import { MyImage } from '@/components/MyImage/MyImage'
 import { Nav } from '@/components/Nav'
+import { UnderLineTitle } from '@/components/underLineTitle/UnderLineTitle'
 import { useState } from 'react'
 
 export default function Page() {
@@ -13,7 +14,11 @@ export default function Page() {
             <Nav />
             <article>
                 <section>
-                    <h2>Exercise {num}</h2>
+                    <h2>
+                        <UnderLineTitle translate="after:translate-x-1">
+                            Exercise {num}
+                        </UnderLineTitle>
+                    </h2>
                     <section className="flex justify-between p-7 gap-9">
                         <MyImage
                             src={`/pictures/questions/${num}.png`}

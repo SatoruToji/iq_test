@@ -67,3 +67,22 @@ select {
 }
 
 
+.title {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -1vh;
+    width: 40vw;
+    height: 1px;
+    background-color: gray;
+}
+
+.after-gray::after {
+    background-color: gray;
+}

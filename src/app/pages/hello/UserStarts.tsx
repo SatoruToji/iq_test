@@ -1,12 +1,13 @@
 import { MyImage } from '@/components/MyImage/MyImage'
+import { UnderLineTitle } from '@/components/underLineTitle/UnderLineTitle'
 import Image from 'next/image'
 import Link from 'next/link'
 
 export function UserStarts() {
     return (
-        <article className="mt-40">
+        <article className="mt-40 ">
             <h2 id="#IqTestDescription" className="text-center">
-                IQ Test
+                <UnderLineTitle width="after:w-90">IQ Test</UnderLineTitle>
             </h2>
             <section className="flex m-10 p-7 gap-10">
                 <MyImage
@@ -21,7 +22,10 @@ export function UserStarts() {
                         даже когнетивное искажение восприятия реальности. Просто
                         выбирайте те ответы, которые вы сочтете верными.
                     </p>
-                    <Link href="/pages/iqTest" className="bg-amber-200">
+                    <Link
+                        href="/pages/iqTest"
+                        className="bg-amber-200 absolute right-0 left-0 w-fit m-auto"
+                    >
                         start the test
                     </Link>
                 </span>
