@@ -1,5 +1,5 @@
 import { UserCard } from '@/components/cards/UserCard'
-import { UnderLineTitle } from 'src/components/UnderLineTitle/UnderLineTitle'
+import { UnderLineTitle } from '../../../components/UnderLineTitle/UnderLineTitle'
 
 export function UserPortrain() {
     return (

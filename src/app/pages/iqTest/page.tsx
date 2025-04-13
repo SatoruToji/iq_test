@@ -4,7 +4,7 @@ import { Exercise } from '@/components/cards/Exercises/Exercise'
 import { IqResult } from '@/components/IqResult/IqResult'
 import { MyImage } from '@/components/MyImage/MyImage'
 import { Nav } from '@/components/Nav'
-import { UnderLineTitle } from 'src/components/UnderLineTitle/UnderLineTitle'
+import { UnderLineTitle } from '../../../components/UnderLineTitle/UnderLineTitle'
 import { useState } from 'react'
 
 export default function Page() {
