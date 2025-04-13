@@ -4,7 +4,6 @@ import { Exercise } from '@/components/cards/Exercises/Exercise'
 import { IqResult } from '@/components/IqResult/IqResult'
 import { MyImage } from '@/components/MyImage/MyImage'
 import { Nav } from '@/components/Nav'
-import { UnderLineTitle } from '../../../components/UnderLineTitle/UnderLineTitle'
 import { useState } from 'react'
 
 export default function Page() {
@@ -16,9 +15,7 @@ export default function Page() {
             <article>
                 <section>
                     <h2 className={`${num < 9 ? '' : 'hidden'}`}>
-                        <UnderLineTitle translate="after:translate-x-1">
-                            Exercise {num}
-                        </UnderLineTitle>
+                        Exercise {num}
                     </h2>
                     <section>
                         {num < 9 ? (

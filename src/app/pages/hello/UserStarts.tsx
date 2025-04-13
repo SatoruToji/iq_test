@@ -1,12 +1,11 @@
 import { MyImage } from '@/components/MyImage/MyImage'
-import { UnderLineTitle } from '../../../components/UnderLineTitle/UnderLineTitle'
 import Link from 'next/link'
 
 export function UserStarts() {
     return (
         <article className="mt-40 ">
             <h2 id="#IqTestDescription" className="text-center">
-                <UnderLineTitle width="after:w-90">IQ Test</UnderLineTitle>
+                IQ Test
             </h2>
             <section className="flex m-10 p-7 gap-10">
                 <MyImage

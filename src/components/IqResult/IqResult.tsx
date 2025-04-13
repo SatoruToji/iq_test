@@ -1,7 +1,6 @@
 'use client'
 
 import { useSelector } from 'react-redux'
-import { UnderLineTitle } from '../UnderLineTitle/UnderLineTitle'
 import { RootState } from '@/lib/store'
 import { GetRandomNum } from '@/lib/functions/getRandomNum'
 import { useEffect, useState } from 'react'
@@ -21,11 +20,9 @@ export function IqResult() {
 
     return (
         <article className="mb-52 m-10 p-10 bg-[#1c1f1f]">
-            <h1 className="text-center">
-                <UnderLineTitle>Result of IQ Test</UnderLineTitle>
-            </h1>
+            <h1 className="text-center">Result of IQ Test</h1>
             <section>
-                <h2 className="text-center mt-5 mb-5">{iq} iq</h2> 
+                <h2 className="text-center mt-5 mb-5">{iq} iq</h2>
                 <p>
                     Поздравляю! Вы прошли iq тест и теперь вы знаете свой
                     настоящий уровень интелекта, а если вы сомневаетесь в наших
