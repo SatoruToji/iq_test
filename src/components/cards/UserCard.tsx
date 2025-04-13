@@ -62,10 +62,12 @@ export function UserCard() {
                     value={state.city}
                     onChange={(e) => handleChange('city', e.target.value)}
                 >
-                    <option value="1">Москва</option>
-                    <option value="2">Санкт-Петербург</option>
-                    <option value="3">Екатеринбург</option>
-                    <option value="4">Калининград</option>
+                    <option value="Москва">Москва</option>
+                    <option value="Санкт-Петербург">Санкт-Петербург</option>
+                    <option value="Екатеринбург">Екатеринбург</option>
+                    <option value="Калининград">Калининград</option>
+                    <option value="Нальчик">Нальчик</option>
+                    <option value="Челябинск">Челябинск</option>
                 </select>
             </fieldset>
 
