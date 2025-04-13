@@ -1,6 +1,5 @@
 'use client'
 
-import { useRouter } from 'next/navigation'
 import { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { setUserData } from '@/lib/userSlice/UserSlice'
@@ -11,7 +10,6 @@ export function UserCard() {
         city: '2',
         gender: 'male',
     })
-    const router = useRouter()
     const dispatch = useDispatch()
 
     function handleChange<K extends keyof typeof state>(
@@ -89,7 +87,6 @@ export function UserCard() {
 
             <button
                 type="submit"
-
                 className="absolute m-auto right-0 left-0 w-fit"
             >
                 Continue

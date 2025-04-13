@@ -1,7 +1,7 @@
 'use client'
 
 import { MyImage } from '@/components/MyImage/MyImage'
-import { Dispatch, SetStateAction, useState } from 'react'
+import { Dispatch, SetStateAction } from 'react'
 
 interface Props {
     num: number

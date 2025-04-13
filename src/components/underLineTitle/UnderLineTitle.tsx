@@ -1,5 +1,5 @@
 interface Props {
-    children: any
+    children: React.ReactNode
     width?: string
     translate?: string
     bottom?: string

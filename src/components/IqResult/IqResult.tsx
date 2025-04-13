@@ -7,7 +7,7 @@ import { GetRandomNum } from '@/lib/functions/getRandomNum'
 import { useEffect, useState } from 'react'
 
 export function IqResult() {
-    const { age, city, gender } = useSelector((state: RootState) => state.user)
+    const { city } = useSelector((state: RootState) => state.user)
     const [iq, setIq] = useState(0)
     useEffect(() => {
         if (city === 'Екатеринбург') {
@@ -25,7 +25,7 @@ export function IqResult() {
                 <UnderLineTitle>Result of IQ Test</UnderLineTitle>
             </h1>
             <section>
-                <h2 className="text-center mt-5 mb-5">{iq} iq</h2>
+                <h2 className="text-center mt-5 mb-5">{iq} iq</h2> 
                 <p>
                     Поздравляю! Вы прошли iq тест и теперь вы знаете свой
                     настоящий уровень интелекта, а если вы сомневаетесь в наших
