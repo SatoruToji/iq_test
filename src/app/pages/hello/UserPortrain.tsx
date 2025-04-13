@@ -1,11 +1,13 @@
 import { UserCard } from '@/components/cards/UserCard'
-import { UnderLineTitle } from '@/components/underLineTitle/UnderLineTitle'
+import { UnderLineTitle } from '@/components/UnderLineTitle/UnderLineTitle'
 
 export function UserPortrain() {
     return (
         <article className="m-10 p-10 bg-[#1c1f1f]">
             <h1 className="text-center">
-                <UnderLineTitle bottom='after:bottom-0'>Ваш Портрет</UnderLineTitle>
+                <UnderLineTitle bottom="after:bottom-0">
+                    Ваш Портрет
+                </UnderLineTitle>
             </h1>
             <section>
                 <p>

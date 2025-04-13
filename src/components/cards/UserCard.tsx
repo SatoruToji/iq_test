@@ -2,6 +2,8 @@
 
 import { useRouter } from 'next/navigation'
 import { useState } from 'react'
+import { useDispatch } from 'react-redux'
+import { setUserData } from '@/lib/userSlice/UserSlice'
 
 export function UserCard() {
     const [state, setState] = useState({
@@ -10,6 +12,7 @@ export function UserCard() {
         gender: 'male',
     })
     const router = useRouter()
+    const dispatch = useDispatch()
 
     function handleChange<K extends keyof typeof state>(
         key: K,
@@ -17,8 +20,14 @@ export function UserCard() {
     ) {
         setState((prev) => ({ ...prev, [key]: value }))
     }
+
+    function handleSubmit(e: React.FormEvent) {
+        e.preventDefault()
+        dispatch(setUserData(state))
+    }
+
     return (
-        <form id="form">
+        <form onSubmit={handleSubmit}>
             <fieldset>
                 <legend>1. Your Gender:</legend>
                 <div>
@@ -78,10 +87,7 @@ export function UserCard() {
 
             <button
                 type="submit"
-                onClick={(e) => {
-                    e.preventDefault()
-                    router.push('/pages/hello#IqTestDescription')
-                }}
+
                 className="absolute m-auto right-0 left-0 w-fit"
             >
                 Continue

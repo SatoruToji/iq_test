@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { Button } from './button/Button'
 
 export function Header() {
     return (

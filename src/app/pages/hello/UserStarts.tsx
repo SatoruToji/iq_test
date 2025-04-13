@@ -1,6 +1,5 @@
 import { MyImage } from '@/components/MyImage/MyImage'
-import { UnderLineTitle } from '@/components/underLineTitle/UnderLineTitle'
-import Image from 'next/image'
+import { UnderLineTitle } from '@/components/UnderLineTitle/UnderLineTitle'
 import Link from 'next/link'
 
 export function UserStarts() {

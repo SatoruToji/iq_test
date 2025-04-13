@@ -22,7 +22,7 @@ export function Exercise({ setNum, num }: Props) {
                     <MyImage src={`/pictures/answers${num}/a3.png`} />
                 </button>
             </div>
-            <div className="flex flex-row ">
+            <div>
                 <button onClick={() => setNum(num + 1)}>
                     <MyImage src={`/pictures/answers${num}/a4.png`} />
                 </button>
