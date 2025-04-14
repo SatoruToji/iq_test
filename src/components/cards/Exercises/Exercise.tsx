@@ -1,5 +1,3 @@
-'use client'
-
 import { MyImage } from '@/components/MyImage/MyImage'
 import { Dispatch, SetStateAction } from 'react'
 

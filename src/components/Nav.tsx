@@ -7,7 +7,7 @@ interface Props {
 export function Nav({ home }: Props) {
     return (
         <nav className="nav">
-            <a href="./">Путь Гения✨</a>
+            <Link href='/'>Путь Гения✨</Link>
             {home ? (
                 <ul>
                     <li>

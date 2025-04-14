@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit'
 import userReducer from './userSlice/UserSlice'
+import componentVisible from './visibleSlice/VisibleSlice'
 
 export const store = configureStore({
     reducer: {
-        user: userReducer
+        user: userReducer,
+        visible: componentVisible
     }
 })
 

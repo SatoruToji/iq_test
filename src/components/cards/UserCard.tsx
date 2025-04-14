@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { setUserData } from '@/lib/userSlice/UserSlice'
+import { show } from '@/lib/visibleSlice/VisibleSlice'
 
 export function UserCard() {
     const [state, setState] = useState({
@@ -88,6 +89,7 @@ export function UserCard() {
             <button
                 type="submit"
                 className="absolute m-auto right-0 left-0 w-fit"
+                onClick={() => dispatch(show())}
             >
                 Continue
             </button>

@@ -1,9 +1,24 @@
+'use client'
+
 import { MyImage } from '@/components/MyImage/MyImage'
+import { RootState } from '@/lib/store'
 import Link from 'next/link'
+import { useEffect, useRef } from 'react'
+import { useSelector } from 'react-redux'
 
 export function UserStarts() {
+    const isVisible = useSelector((state: RootState) => state.visible.isVisible)
+    const ref = useRef<HTMLDivElement>(null)
+
+    useEffect(() => {
+        if (isVisible && ref.current) {
+            ref.current.scrollIntoView({ behavior: 'smooth', block: 'center' })
+        }
+    }, [isVisible])
+
+    if (!isVisible) return null
     return (
-        <article className="mt-40 ">
+        <article className="mt-40" ref={ref}>
             <h2 id="#IqTestDescription" className="text-center">
                 IQ Test
             </h2>

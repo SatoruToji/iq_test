@@ -6,7 +6,7 @@ interface UserState {
     gender: string
 }
 
-const counterSlice = createSlice({
+const userSlice = createSlice({
     name: 'user',
     initialState: {
         age: 0,
@@ -21,5 +21,5 @@ const counterSlice = createSlice({
 })
 
 
-export const { setUserData } = counterSlice.actions
-export default counterSlice.reducer
+export const { setUserData } = userSlice.actions
+export default userSlice.reducer
