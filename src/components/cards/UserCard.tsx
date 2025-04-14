@@ -8,7 +8,7 @@ import { show } from '@/lib/visibleSlice/VisibleSlice'
 export function UserCard() {
     const [state, setState] = useState({
         age: 0,
-        city: '2',
+        city: '5',
         gender: 'male',
     })
     const dispatch = useDispatch()
@@ -26,9 +26,9 @@ export function UserCard() {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className=' '>
             <fieldset>
-                <legend>1. Your Gender:</legend>
+                <legend>1. Your Gender</legend>
                 <div>
                     <input
                         type="radio"
@@ -54,7 +54,7 @@ export function UserCard() {
             </fieldset>
 
             <fieldset>
-                <legend>2. Your City:</legend>
+                <legend>2. Your City</legend>
                 <select
                     name="city"
                     id="city"
@@ -72,11 +72,11 @@ export function UserCard() {
 
             <fieldset>
                 <legend>3. How old are you?</legend>
-                <label htmlFor="age">ur age:</label>
+                <label htmlFor="age">возраст </label>
                 <input
                     type="range"
                     id="age"
-                    min="0"
+                    min=" 0"
                     max="9"
                     value={state.age}
                     onChange={(e) =>

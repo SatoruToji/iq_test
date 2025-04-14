@@ -1,5 +1,9 @@
 @import 'tailwindcss';
 
+* {
+    transition-duration: 500ms;
+}
+
 body {
     background-color: #181a1b;
     color: white;
@@ -27,9 +31,49 @@ nav {
 
 button {
     padding: 1vh;
-    color: darkgray;
-    border-radius: 3px;
+    background-color: #181a1b;
+    border: 1px solid gray;
+    border-radius: 2px;
     cursor: pointer;
+}
+
+form {
+    transform: translateX(5vh);
+}
+
+fieldset {
+    margin-top: 2vh;
+    /* border: 1px solid darkgray; */
+    box-sizing: border-box;
+}
+
+label {
+    color: gray;
+    font-size: 1em;
+}
+select {
+    padding: 6px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #181a1b;
+}
+
+input {
+    color: red;
+}
+
+option {
+    color: darkgray;
+    background-color: #181a1b;
+    border: 10px solid #ccc;
+}
+
+a {
+    color: darkgray;
+}
+a:hover {
+    text-decoration: underline;
+    color: white;
 }
 
 .border {
@@ -54,4 +98,65 @@ button {
 
 .after-gray::after {
     background-color: gray;
+}
+
+.UserStarts {
+    display: flex;
+    margin: 4rem;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.iqTest {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 1.5em;
+    }
+    .iqTest {
+        display: block;
+        padding: 3rem;
+        gap: 1rem;
+    }
+}
+@media (max-width: 480px) {
+    body {
+        font-size: 1em;
+    }
+
+    button {
+        width: 35vw;
+    }
+
+    form {
+        text-align: center;
+        font-size: 1em;
+        transform: none;
+    }
+
+    select {
+        width: 30vw;
+    }
+    .UserStarts {
+        display: block;
+        margin: 2rem;
+        padding: 0.5rem;
+    }
+    .UserStarts__Image {
+        position: relative;
+        right: 0;
+        left: 0;
+        margin: auto;
+        margin-bottom: 3vh;
+        width: 50vw;
+    }
+
+    button {
+        width: fit-content;
+    }
 }

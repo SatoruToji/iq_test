@@ -22,12 +22,15 @@ export function UserStarts() {
             <h2 id="#IqTestDescription" className="text-center">
                 IQ Test
             </h2>
-            <section className="flex m-10 p-7 gap-10">
-                <MyImage
-                    src={'/pictures/start_test.png'}
-                    width={400}
-                    alt="start the test"
-                />
+            <section className="UserStarts">
+                <div className='UserStarts__Image'>
+                    <MyImage
+                        src={'/pictures/start_test.png'}
+                        width={400}
+                        alt="start the test"
+                    />
+                </div>
+
                 <span>
                     <p>
                         Вам предстоит выполнить 9 уровней теста, на каждом
@@ -37,7 +40,7 @@ export function UserStarts() {
                     </p>
                     <Link
                         href="/pages/iqTest"
-                        className="bg-amber-200 absolute right-0 left-0 w-fit m-auto"
+                        className="absolute right-0 left-0 w-fit m-auto"
                     >
                         start the test
                     </Link>

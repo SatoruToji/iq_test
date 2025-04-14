@@ -19,7 +19,7 @@ export default function Page() {
                     </h2>
                     <section>
                         {num < 9 ? (
-                            <div className="flex justify-between p-7 gap-9">
+                            <div className="iqTest">
                                 <MyImage
                                     src={`/pictures/questions/${num}.png`}
                                     width={500}

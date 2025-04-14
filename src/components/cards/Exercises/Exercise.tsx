@@ -8,8 +8,8 @@ interface Props {
 
 export function Exercise({ setNum, num }: Props) {
     return (
-        <div>
-            <div>
+        <div className='flex flex-col gap-5'>
+            <div className='flex gap-1'>
                 <button onClick={() => setNum(num + 1)}>
                     <MyImage src={`/pictures/answers${num}/a1.png`} />
                 </button>
@@ -20,7 +20,7 @@ export function Exercise({ setNum, num }: Props) {
                     <MyImage src={`/pictures/answers${num}/a3.png`} />
                 </button>
             </div>
-            <div>
+            <div className='flex gap-1'>
                 <button onClick={() => setNum(num + 1)}>
                     <MyImage src={`/pictures/answers${num}/a4.png`} />
                 </button>
